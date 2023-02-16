@@ -1,11 +1,13 @@
 :root {
-    --text-color-main: blue;
+    --text-color-main: gray;
 }
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Cabin', sans-serif;
+    /* background-color: dimgray; */
+    color: var(--text-color-main)
 }
 
 @font-face {
@@ -14,10 +16,28 @@
 }
 
 header {
-    height: 30px;
-    background-color: aqua;
+    height: 200px;
+    background-image: url("../assets/images/1Dspectrum_thin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar{
     font-size: 21px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(75, 213, 213);
+    text-align: right;
+    margin-bottom: 25px;
+    /* padding-right: 10px; */
+    display: inline-table;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar a:hover {
+    box-shadow: inset 1px 1px black;
 }
