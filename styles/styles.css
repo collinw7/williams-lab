@@ -27,6 +27,7 @@ html {
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  margin-top: 8vh;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -89,6 +90,10 @@ nav ul li a {
   font-weight: bold;
   line-height: 8vh;
   cursor: pointer;
+}
+
+nav ul:last-child{
+  padding-right: 0;
 }
 
 nav ul li a:hover,
