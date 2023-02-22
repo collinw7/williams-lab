@@ -14,11 +14,7 @@
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 500,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
 }
 
 @font-face {
@@ -27,7 +23,7 @@
 }
 
 html {
-    overflow-y: overlay;
+  overflow-y: overlay;
 }
 
 ::-webkit-scrollbar {
@@ -48,18 +44,18 @@ html {
   background: #555;
 }
 
-.intro-container{
+.intro-container {
   padding: 0px 40px 40px 40px;
 }
 
 .content-container {
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
   display: inline-block;
 }
 
 span.labmembers {
   float: right;
-  margin-left: 20px;
+  margin: 0 0 20px 20px;
 }
 
 span.labmembers img {
@@ -68,7 +64,7 @@ span.labmembers img {
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.8);
 }
 
-span.cytosine{
+span.cytosine {
   float: left;
   margin-right: 20px;
 }
@@ -79,7 +75,7 @@ span.cytosine img {
   border-radius: 10px;
 }
 
-p{
+p {
   font-size: x-large;
 }
 
@@ -91,8 +87,8 @@ nav {
   position: sticky;
   top: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  overflow: hidden;
+  z-index: 99;
+  /* overflow: overlay; */
 }
 
 nav img {
@@ -112,7 +108,7 @@ nav span {
   cursor: default;
 }
 
-nav span.menubtn{
+nav span.menubtn {
   background: transparent;
   line-height: 8vh;
   font-size: 2rem;
@@ -123,15 +119,45 @@ nav span.menubtn{
 }
 
 nav span.menubtn:hover,
-nav span.menubtn.active{
+nav span.menubtn.active {
   color: #555;
 }
 
 nav ul {
   display: flex;
   margin: 0;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   float: right;
+  list-style: none;
+}
+
+.openmenu {
+  position: sticky;
+  top: calc(8vh);
+  margin-top: -25px;
+  height: 0;
+  float: right;
+  z-index: 99;
+}
+
+.openmenu ul {
+  background: var(--unc-blue);
+  list-style: none;
+  position: sticky;
+  /* margin-top: -25px; */
+}
+
+.openmenu ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.close {
+  display: none;
 }
 
 nav ul li {
@@ -148,23 +174,45 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul:last-child{
+nav ul:last-child {
   padding-right: 0;
 }
 
-nav ul li a:hover,
-nav ul li a.current {
+a:hover,
+a.current {
   background: var(--unc-blue-alt);
 }
 
-@media (max-width: 768px) {
-  nav span.menubtn{
+@media (min-width: 833px) {
+  .navlist {
+    display: flex;
+  }
+  html {
+    overflow-y: overlay !important;
+  }
+}
+
+@media (max-width: 834px) {
+  nav span.menubtn {
     display: block;
   }
-  nav ul{
+  p {
+    font-size: medium;
+  }
+  h1 {
+    font-size: larger;
+  }
+  .navlist {
     display: none;
   }
-  p{
-    font-size: large;
+  html {
+    overflow-y: overlay;
   }
+}
+
+.open{
+  background-color: var(--unc-blue);
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
