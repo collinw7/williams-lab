@@ -1,0 +1,7 @@
+.content-container img {
+    width: 20rem;
+}
+
+.content-container span {
+    border: .1rem solid black;
+}

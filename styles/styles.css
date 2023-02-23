@@ -50,7 +50,7 @@ html {
 }
 
 .content-container {
-  padding: 20px 0 20px 0;
+  padding: 20px;
   display: inline-block;
 }
 
@@ -188,6 +188,9 @@ a.current {
   }
   h1 {
     font-size: larger;
+  }
+  h2 {
+    font-size: large;
   }
   .navlist {
     display: none;
