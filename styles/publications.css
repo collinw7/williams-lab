@@ -1,0 +1,5 @@
+a.publink:hover {
+    color: var(--unc-blue);
+    background-color: transparent !important;
+    cursor: pointer;
+}

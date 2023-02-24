@@ -68,6 +68,10 @@ p {
   font-size: x-large;
 }
 
+hr.soft {
+  border-color: rgba(188, 188, 188, 0.2);
+}
+
 nav {
   height: 8vh;
   width: 100%;
