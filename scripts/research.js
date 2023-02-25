@@ -10,12 +10,12 @@ var pages = [
 
 var currentPage = 0;
 
-$(".pageNum").text(currentPage + 1);
+$(".pageNum").text((currentPage + 1) + "/" + (pages.length));
 
 $(".next").click(function () {
   if (!(currentPage == pages.length - 1)) {
     currentPage++;
-    $(".pageNum").text(currentPage + 1);
+    $(".pageNum").text((currentPage + 1) + "/" + (pages.length));
     $(".slideshow").load(pages[currentPage]);
   }
 });
@@ -23,7 +23,7 @@ $(".next").click(function () {
 $(".prev").click(function () {
   if (!(currentPage == 0)) {
     currentPage--;
-    $(".pageNum").text(currentPage + 1);
+    $(".pageNum").text((currentPage + 1) + "/" + (pages.length));
     $(".slideshow").load(pages[currentPage]);
   }
 });
