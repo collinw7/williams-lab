@@ -1,12 +1,12 @@
 $(function () {
-  $(".slideshow").load("../research/MBDProteins.html");
+  $(".slideshow").load("../research/MBDProteins.html"); // First page shown
 });
 
 var pages = [
   "../research/MBDProteins.html",
   "../research/NuRD-recruitment.html",
   "../research/NuRD-disruption.html",
-];
+]; // Pages in order to be shown
 
 var currentPage = 0;
 

@@ -1,11 +1,11 @@
 $(function() {
-  $("#coiled-coil").toggle("close");
+  $("#coiled-coil").toggle("close"); // closes all but the first structure on load
 });
 
 var pages = [
   "#cMBD2",
   "#coiled-coil"
-];
+]; // list of structure IDs
 
 var currentPage = 0;
 
