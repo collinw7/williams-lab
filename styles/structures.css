@@ -1,7 +1,39 @@
-.content-container img {
-    width: 30vw;
+:root {
+  --text-color-main: rgb(66, 66, 66);
+  --unc-blue: #4b9cd3;
+  --unc-blue-alt: #30536b;
 }
 
-.content-container span {
-    border: .1rem solid black;
+.buttons {
+  padding: 20px 0 0 0;
+  user-select: none;
+  /* float: right; */
+}
+
+.buttons span {
+  font-size: xx-large;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttons span:hover {
+  color: rebeccapurple;
+}
+
+.slideshow {
+  max-width: 100%;
+  border: 0.1rem solid rgba(188, 188, 188, 0.8);
+}
+
+.slideshow img {
+  width: 30vw;
+  border: 0.1rem solid black;
+}
+
+.buttons .pageNum {
+  font-size: larger;
+  bottom: 8px;
+  position: relative;
+  padding: 2px;
+  border: 0.08rem solid black;
 }

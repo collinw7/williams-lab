@@ -10,7 +10,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="../scripts/navbar.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
+    <script src="../scripts/structures.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../jsmol/JSmol.min.nojq.js"></script>
+    <script src="../jsmol/js/Jmol2.js"></script>
+    <script> jmolInitialize("../jsmol");</script>
     <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
@@ -48,13 +52,29 @@
             <h1>Recent Structures</h1>
         </div>
         <hr>
-        <div class="content-container">
-            <span class="right"><img src="../assets/images/MBD2intfc.png" alt=""></span>
-            <span class="right"><img src="../assets/images/cartoon2.png" alt=""></span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur voluptatibus in nam
-                necessitatibus. Ratione natus soluta ea hic quidem cum provident similique eaque veniam culpa maiores
-                quaerat totam libero, perspiciatis expedita consectetur? Repudiandae voluptatum fuga debitis sequi velit
-                non.</p>
+        <div class="buttons">
+            <span class="material-symbols-outlined prev">arrow_back</span>
+            <span class="pageNum"></span>
+            <span class="material-symbols-outlined next">arrow_forward</span>
+        </div>
+        <div id="cMBD2" class="content-container">
+            <span class="right">
+                <script class="jmol">jmolApplet(400, "load ../assets/2ky8.pdb; cartoon only;")</script>
+            </span>
+            <h2>cMBD2:mCpG</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia ratione perspiciatis unde
+                repellat vero rerum adipisci amet consequatur provident explicabo eos facere, obcaecati minus non
+                cumque, laudantium voluptate in impedit sed? Voluptatibus quaerat totam fugiat quo praesentium
+                accusantium voluptas!</p>
+        </div>
+        <div id="coiled-coil" class="content-container close">
+            <span class="right">
+                <script class="jmol">jmolApplet(400, "load ../assets/2l2l.pdb; cartoon only;")</script>
+            </span>
+            <h2>p66α:MBD2 coiled-coil complex</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum, quam expedita consequatur vel aliquid
+                error dicta molestias velit a! Rerum, qui blanditiis consequuntur quos sunt molestiae aspernatur, quas
+                consequatur provident commodi expedita minima tempora itaque amet, deserunt hic nobis?</p>
         </div>
     </div>
     <footer></footer>
