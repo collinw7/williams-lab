@@ -1,4 +1,6 @@
-$(function() {});
+$(function() {
+  $("#coiled-coil").toggle("close");
+});
 
 var pages = [
   "#cMBD2",
