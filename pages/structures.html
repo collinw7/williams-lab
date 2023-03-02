@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../jsmol/JSmol.min.nojq.js"></script>
     <script src="../jsmol/js/Jmol2.js"></script>
-    <script> jmolInitialize("../jsmol");</script>
+    <script src="../structures/jmol.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
@@ -48,7 +48,7 @@
         </ul>
     </div>
     <div class="page-container">
-        <div class="content-container">
+        <div id="title" class="content-container">
             <h1>Recent Structures</h1>
         </div>
         <hr>
@@ -59,7 +59,7 @@
         </div>
         <div id="cMBD2" class="content-container">
             <span class="right">
-                <script class="jmol">jmolApplet(400, "load ../assets/2ky8.pdb; cartoon only;")</script>
+                <script class="jmol" src="../structures/2ky8.js"></script>
             </span>
             <h2>cMBD2:mCpG</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia ratione perspiciatis unde
@@ -69,9 +69,9 @@
         </div>
         <div id="coiled-coil" class="content-container">
             <span class="right">
-                <script class="jmol">jmolApplet(400, "load ../assets/2l2l.pdb; cartoon only;")</script>
+                <script class="jmol" src="../structures/2l2l.js"></script>
             </span>
-            <h2>p66α:MBD2 coiled-coil complex</h2>
+            <h2>p66&alpha;:MBD2 coiled-coil complex</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum, quam expedita consequatur vel aliquid
                 error dicta molestias velit a! Rerum, qui blanditiis consequuntur quos sunt molestiae aspernatur, quas
                 consequatur provident commodi expedita minima tempora itaque amet, deserunt hic nobis?</p>

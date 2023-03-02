@@ -1,0 +1,1 @@
+jmolApplet(400, "load ../assets/2l2l.pdb; cartoon only; color molecule;");
