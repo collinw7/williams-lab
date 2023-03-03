@@ -9,7 +9,7 @@ var pages = [
 
 var currentPage = 0;
 
-$(".pageNum").text((currentPage + 1) + "/" + (pages.length));
+$(".pageNum").text((currentPage + 1) + "/" + (pages.length)); // page number implementation
 
 $(".next").click(function () {
   if (!(currentPage == pages.length - 1)) {
