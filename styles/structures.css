@@ -1,66 +1,38 @@
-.buttons {
-  padding: 20px 0 0 0;
-  user-select: none;
-}
-
-.buttons span {
-  font-size: xx-large;
-  cursor: pointer;
-  user-select: none;
-}
-
-.buttons span:hover {
-  color: rebeccapurple;
-}
-
-.content-container span.right {
+.content-container span.right,
+span.left {
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-}
-
-.content-container span img {
-  width: 20vw;
-  min-width: 200px;
-}
-
-.content-container span p.image-1 {
-  width: 190px;
-  padding: 5px;
-}
-
-.content-container span p.image-2 {
-  width: calc(20vw - 10px);
-  min-width: 190px;
-  padding: 5px;
-  margin: 0 auto;
-}
-
-.buttons .pageNum {
-  font-size: larger;
-  bottom: 8px;
-  position: relative;
-  padding: 2px;
-}
-
-.link {
-  color: var(--unc-blue);
-}
-
-.link:hover {
-  background-color: transparent;
-  cursor: pointer;
-  color: var(--unc-blue-alt);
 }
 
 p {
   font-size: large;
 }
 
-.cyan {
+.cyan,
+.cyan sub {
   color: cyan;
   font-weight: bold;
 }
 
-.purple {
+.purple,
+.purple sub {
   color: rgb(120, 120, 235);
+  font-weight: bold;
+}
+
+.green,
+.green sub {
+  color: green;
+  font-weight: bold;
+}
+
+.red,
+.red sub {
+  color: red;
+  font-weight: bold;
+}
+
+.pink,
+.pink sub {
+  color: magenta;
   font-weight: bold;
 }

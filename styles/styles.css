@@ -54,6 +54,29 @@ html {
   display: inline-block;
 }
 
+.content-container span img {
+  width: 20vw;
+  min-width: 200px;
+}
+
+.content-container span p.image-1 {
+  width: 190px;
+  padding: 5px;
+}
+
+p.image-2,
+p.image-3 {
+  width: calc(20vw - 10px);
+  min-width: 190px;
+  padding: 5px;
+  margin: 0;
+}
+
+.credit {
+  font-size: small;
+  color: rgba(66, 66, 66, 0.6);
+}
+
 canvas {
   z-index: 1;
 }
@@ -173,9 +196,42 @@ nav ul:last-child {
   padding-right: 0;
 }
 
-a:hover,
-a.current {
+nav a:hover,
+nav a.current {
   background: var(--unc-blue-alt);
+}
+
+.link, .link sup {
+  color: var(--unc-blue);
+}
+
+.link:hover, .link sup:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--unc-blue-alt);
+}
+
+.buttons {
+  padding: 20px 0 0 11px;
+  user-select: none;
+}
+
+.buttons span {
+  font-size: xx-large;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttons span.material-symbols-outlined:hover {
+  color: var(--unc-blue);
+}
+
+.buttons .pageNum {
+  font-size: larger;
+  bottom: 8px;
+  position: relative;
+  padding: 2px;
+  cursor: default;
 }
 
 @media (min-width: 833px) {

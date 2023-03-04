@@ -1,21 +1,28 @@
-.buttons {
-  padding: 20px 0 0 0;
-  user-select: none;
+.content-container span.right,
+span.left {
+  margin: 0 0 20px 0;
 }
 
-.buttons span {
-  font-size: xx-large;
+p {
+  font-size: large;
+}
+
+.ref {
+  text-decoration: none;
+}
+
+.link sup {
+  text-decoration: underline;
+  color: var(--unc-blue);
   cursor: pointer;
-  user-select: none;
-}
-
-.buttons span:hover {
-  color: rebeccapurple;
 }
 
 .slideshow {
   max-width: 100%;
-  border: 0.1rem solid rgba(188, 188, 188, 0.8);
+}
+
+.slideshow ul {
+  margin: 0 0 0 15px;
 }
 
 .slideshow img {
@@ -23,9 +30,33 @@
   border: 0.1rem solid black;
 }
 
-.buttons .pageNum {
-  font-size: larger;
-  bottom: 8px;
-  position: relative;
-  padding: 2px;
+img:hover {
+  cursor: pointer;
+}
+
+.side,
+.side-reverse {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.side p,
+.side-reverse p {
+  font-size: small;
+}
+
+.side-reverse {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.side span {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.no-border {
+  border: none;
 }
