@@ -183,7 +183,7 @@ a.current {
     display: flex;
   }
   html {
-    overflow-y: overlay !important;
+    overflow-y: overlay;
   }
 }
 

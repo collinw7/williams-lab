@@ -1,7 +1,6 @@
 .buttons {
   padding: 20px 0 0 0;
   user-select: none;
-  /* float: right; */
 }
 
 .buttons span {
@@ -14,14 +13,25 @@
   color: rebeccapurple;
 }
 
-.slideshow {
-  max-width: 100%;
-  border: 0.1rem solid rgba(188, 188, 188, 0.8);
+.content-container span.right {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.slideshow img {
-  width: 30vw;
-  border: 0.1rem solid black;
+.content-container span img {
+  width: 20vw;
+  min-width: 200px;
+}
+
+.content-container span p.image-1 {
+  width: 190px;
+  padding: 5px;
+}
+
+.content-container span p.image-2 {
+  width: calc(20vw - 10px);
+  min-width: 190px;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 .buttons .pageNum {
@@ -29,5 +39,28 @@
   bottom: 8px;
   position: relative;
   padding: 2px;
-  border: 0.08rem solid black;
+}
+
+.link {
+  color: var(--unc-blue);
+}
+
+.link:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--unc-blue-alt);
+}
+
+p {
+  font-size: large;
+}
+
+.cyan {
+  color: cyan;
+  font-weight: bold;
+}
+
+.purple {
+  color: rgb(120, 120, 235);
+  font-weight: bold;
 }

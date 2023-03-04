@@ -13,8 +13,6 @@
     <script src="../scripts/structures.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../jsmol/JSmol.min.nojq.js"></script>
-    <script src="../jsmol/js/Jmol2.js"></script>
-    <script src="../structures/jmol.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
@@ -53,28 +51,69 @@
         </div>
         <hr>
         <div class="buttons">
-            <span class="material-symbols-outlined prev">arrow_back</span>
+            <span class="material-symbols-outlined prev">chevron_left</span>
             <span class="pageNum"></span>
-            <span class="material-symbols-outlined next">arrow_forward</span>
+            <span class="material-symbols-outlined next">chevron_right</span>
         </div>
         <div id="cMBD2" class="content-container">
+            <span class="right"><img src="../assets/images/MBD2intfc.png" alt="">
+                <p class="image-2">Two key arginine residues form bidentate hydrogen bonds with the
+                    symmetrically related
+                    guanosine bases of
+                    the CpG dinucleotide. A conserved aspartate residue stabilizes one arginine, while a tyrosine
+                    interacts
+                    with the methyl-cytosine.</p>
+            </span>
             <span class="right">
                 <script class="jmol" src="../structures/2ky8.js"></script>
+                <p class="image-1">The MBD2<sub>MBD</sub> binds in the major groove of DNA. Two
+                    β-strands form a long
+                    finger-like projection
+                    that
+                    extends down the major groove and provides most of the contacts with DNA.</p>
             </span>
             <h2>cMBD2:mCpG</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia ratione perspiciatis unde
-                repellat vero rerum adipisci amet consequatur provident explicabo eos facere, obcaecati minus non
-                cumque, laudantium voluptate in impedit sed? Voluptatibus quaerat totam fugiat quo praesentium
-                accusantium voluptas!</p>
+            <p>We solved the structure of the chicken MBD2<sub>MBD</sub> bound to a methylated DNA sequence from the
+                chicken ρ globin promoter (<a class="link"
+                    href="http://www.rcsb.org/pdb/explore/explore.do?structureId=2KY8">2KY8</a>). The domain consists of
+                a three-stranded β sheet which extends down the major groove to make base-specific contacts with DNA. A
+                small C-terminal α-helix and N- and C- terminal loop regions pack against the opposite face of this β
+                sheet. Two highly conserved arginine residues form bidentate hydrogen bonds with the symmetrically
+                related guanosine bases of the mCpG dinucleotide. The aliphatic portion of the arginine side chains
+                packs against the methyl groups of the preceding 5mC. A critical tyrosine residue points towards one 5mC
+                such that the hydroxyl either interacts directly with the methyl group (forming a methyl hydrogen bond)
+                or replaces a structured water molecule surrounding the methyl group.</p>
+            <br>
+            <br>
         </div>
         <div id="coiled-coil" class="content-container">
+            <span class="right"><img src="../assets/images/p66aMBD2_knobsholes.png" alt="">
+                <p class="image-2">Hydrophobic “knobs” fit into “holes” as the two helices wrap around
+                    one another. Key
+                    charge interactions stabilize the complex and promote the anti-parallel arrangement.</p>
+            </span>
             <span class="right">
                 <script class="jmol" src="../structures/2l2l.js"></script>
+                <p class="image-1">The <span class="cyan">MBD2</span> and <span
+                        class="purple">p66&alpha;</span> proteins
+                    from the NuRD complex form a canonical anti-parallel
+                    heterodimeric coiled-coil complex.</p>
             </span>
             <h2>p66&alpha;:MBD2 coiled-coil complex</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum, quam expedita consequatur vel aliquid
-                error dicta molestias velit a! Rerum, qui blanditiis consequuntur quos sunt molestiae aspernatur, quas
-                consequatur provident commodi expedita minima tempora itaque amet, deserunt hic nobis?</p>
+            <p>Based on previous work we postulated and showed that the coiled-coil domains of MBD2 and p66&alpha; form
+                a
+                stable heterodimeric complex. These domains bind one another with high affinity (~20 nM) yet largely
+                remained as monomers in isolation. We determined the solution structure of p66&aleph;:MBD2 (<a
+                    class="link" href="http://www.rcsb.org/pdb/explore/explore.do?structureId=2L2L">2L2L</a>) which
+                revealed a
+                canonical anti-parallel coiled-coil complex with the typical “knobs into holes” hydrophobic interface
+                stabilized by specific ionic interacions.</p>
+            <br>
+            <p>Based on this structure, we then showed that the p66&alpha; coiled-coil peptide could block the formation
+                of
+                the native NuRD complex and inhibit methylation-dependent gene silencing. This observation raises the
+                possibility that a cell penetrating peptide or peptide mimetic could be developed for the treatment of
+                cancer and β-hemoglobinopathies.</p>
         </div>
     </div>
     <footer></footer>
