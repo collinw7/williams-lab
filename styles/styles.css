@@ -201,11 +201,13 @@ nav a.current {
   background: var(--unc-blue-alt);
 }
 
-.link, .link sup {
+.link,
+.link sup {
   color: var(--unc-blue);
 }
 
-.link:hover, .link sup:hover {
+.link:hover,
+.link sup:hover {
   background-color: transparent;
   cursor: pointer;
   color: var(--unc-blue-alt);
@@ -232,6 +234,36 @@ nav a.current {
   position: relative;
   padding: 2px;
   cursor: default;
+}
+
+.cyan,
+.cyan sub {
+  color: cyan;
+  font-weight: bold;
+}
+
+.purple,
+.purple sub {
+  color: rgb(120, 120, 235);
+  font-weight: bold;
+}
+
+.green,
+.green sub {
+  color: green;
+  font-weight: bold;
+}
+
+.red,
+.red sub {
+  color: red;
+  font-weight: bold;
+}
+
+.pink,
+.pink sub {
+  color: magenta;
+  font-weight: bold;
 }
 
 @media (min-width: 833px) {

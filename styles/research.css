@@ -1,5 +1,6 @@
 .content-container span.right,
-span.left {
+span.left,
+span.no-float {
   margin: 0 0 20px 0;
 }
 
@@ -30,7 +31,7 @@ p {
   border: 0.1rem solid black;
 }
 
-img:hover {
+.slideshow img:hover {
   cursor: pointer;
 }
 
@@ -42,8 +43,7 @@ img:hover {
   text-align: start;
 }
 
-.side p,
-.side-reverse p {
+span p {
   font-size: small;
 }
 
@@ -59,4 +59,9 @@ img:hover {
 
 .no-border {
   border: none;
+}
+
+.no-float {
+  display: inline-flex;
+  flex-direction: column;
 }

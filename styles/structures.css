@@ -6,33 +6,3 @@ span.left {
 p {
   font-size: large;
 }
-
-.cyan,
-.cyan sub {
-  color: cyan;
-  font-weight: bold;
-}
-
-.purple,
-.purple sub {
-  color: rgb(120, 120, 235);
-  font-weight: bold;
-}
-
-.green,
-.green sub {
-  color: green;
-  font-weight: bold;
-}
-
-.red,
-.red sub {
-  color: red;
-  font-weight: bold;
-}
-
-.pink,
-.pink sub {
-  color: magenta;
-  font-weight: bold;
-}

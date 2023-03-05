@@ -1,11 +1,21 @@
-span.labmembers img {
-  width: 40vw;
-  border-radius: 10px;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.8);
-}
-
-span.cytosine img {
+.content-container span img {
   width: 40vw;
   border: 3px solid black;
   border-radius: 10px;
+}
+
+span.labmembers img {
+  width: 40vw;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+span.gd2a img {
+  width: 20vw;
+}
+
+ol {
+  font-size: larger;
+  margin: 0 0 0 20px;
 }
