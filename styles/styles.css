@@ -197,7 +197,7 @@ nav ul:last-child {
 }
 
 nav a:hover,
-nav a.current {
+nav a.current, .openmenu a:hover, .openmenu a.current {
   background: var(--unc-blue-alt);
 }
 
